@@ -55,9 +55,14 @@ class PreviewView extends EditorView
 			@trigger 'title-changed'
 
 			text     = cEditor.getText()
-			compiled = ngClassify text
-			compiled = compiled + '\n'
+			
+			try
+				compiled = ngClassify text
+				compiled = compiled + '\n'
 
-			@previewEditor.setText compiled
+				@previewEditor.setText compiled
+			catch error
+				return
+
 
 module.exports = PreviewView

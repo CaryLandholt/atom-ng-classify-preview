@@ -1,0 +1,139 @@
+'.source.coffee':
+	'Angular Animation':
+		'prefix': 'ng-animation'
+		'body': """
+		class ${1:ClassName} extends Animation
+			constructor:${2: (${3:parameter})} ->
+				return {
+					$4
+				}
+		"""
+
+	'Angular App':
+		'prefix': 'ng-app'
+		'body': """
+		class ${1:ClassName} extends App
+			constructor: ->
+				return [
+					'${2:dependency}'
+				]
+		"""
+
+	'Angular Backend':
+		'prefix': 'ng-backend'
+		'body': """
+		class ${1:ClassName} extends Run
+			constructor: ($httpBackend${2:, ${3:parameter}}) ->
+				$httpBackend.whenGET(${4:/^.*\\.(html|htm)$/}).passThrough()
+		"""
+
+	'Angular Config':
+		'prefix': 'ng-config'
+		'body': """
+		class ${1:ClassName} extends Config
+			constructor:${2: (${3:parameter})} ->
+				$4
+		"""
+
+	'Angular Constant':
+		'prefix': 'ng-constant'
+		'body': """
+		class ${1:ClassName} extends Constant
+			constructor: ->
+				return $2
+		"""
+
+	'Angular Controller':
+		'prefix': 'ng-controller'
+		'body': """
+		class ${1:ClassName} extends Controller
+			constructor:${2: (${3:parameter})} ->
+				$4
+		"""
+
+	'Angular Decorator':
+		'prefix': 'ng-decorator'
+		'body': """
+		class ${1:ClassName} extends Config
+			constructor: ($provide${2:, ${3:parameter}}) ->
+				$provide.decorator '${4:serviceName}', ['$delegate', ($delegate) ->
+
+					$5
+
+					$delegate
+				]
+		"""
+
+	'Angular Directive':
+		'prefix': 'ng-directive'
+		'body': """
+		class ${1:ClassName} extends Directive
+			constructor:${2: (${3:parameter})} ->
+				return {
+					$4
+				}
+		"""
+
+	'Angular Factory':
+		'prefix': 'ng-factory'
+		'body': """
+		class ${1:ClassName} extends Factory
+			constructor:${2: (${3:parameter})} ->
+				return class
+					constructor:${4: (${5:parameter})} ->
+						$6
+		"""
+
+	'Angular Filter':
+		'prefix': 'ng-filter'
+		'body': """
+		class ${1:ClassName} extends Filter
+			constructor:${2: (${3:parameter})} ->
+				return${4: (${5:parameter})} ->
+					$6
+		"""
+
+	'Angular Provider':
+		'prefix': 'ng-provider'
+		'body': """
+		class ${1:ClassName} extends Provider
+			constructor:${2: (${3:parameter})} ->
+				@$get = ->
+					$4
+		"""
+
+	'Angular Router':
+		'prefix': 'ng-router'
+		'body': """
+		class ${1:ClassName} extends Config
+			constructor: ($routeProvider${2:, ${3:parameter}}) ->
+				$routeProvider
+				.when '$4',
+					controller: '$5'
+					controllerAs: '$6'
+					templateUrl: '$7'
+		"""
+
+	'Angular Run':
+		'prefix': 'ng-run'
+		'body': """
+		class ${1:ClassName} extends Run
+			constructor:${2: (${3:parameter})} ->
+				$4
+		"""
+
+	'Angular Service':
+		'prefix': 'ng-service'
+		'body': """
+		class ${1:ClassName} extends Service
+			constructor:${2: (${3:parameter})} ->
+				$4
+		"""
+
+	'Angular Value':
+		'prefix': 'ng-value'
+		'body': """
+		class ${1:ClassName} extends Value
+			constructor: ->
+				return $2
+		"""

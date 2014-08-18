@@ -1,0 +1,18 @@
+'context-menu':
+	'.overlayer':
+		'Toggle ng-classify Preview': 'ng-classify-preview:toggle'
+
+'menu': [
+	{
+		'label': 'Packages'
+		'submenu': [
+			'label': 'ng-classify Preview'
+			'submenu': [
+				{
+					'label': 'Toggle'
+					'command': 'ng-classify-preview:toggle'
+				}
+			]
+		]
+	}
+]

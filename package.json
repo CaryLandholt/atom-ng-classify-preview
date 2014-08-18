@@ -1,6 +1,6 @@
 {
 	"name": "ng-classify-preview",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Snippets for Converting CoffeeScript classes to AngularJS modules with ng-classify",
 	"author": {
 		"name": "Cary Landholt",

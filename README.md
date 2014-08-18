@@ -9,7 +9,7 @@
 
 ## Install
 ```bash
-$ apm install ng-classify
+$ apm install ng-classify-preview
 ```
 
 

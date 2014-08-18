@@ -29,7 +29,7 @@
 		"atom": ">=0.123.0"
 	},
 	"dependencies": {
-		"ng-classify": "^4.0.1",
+		"ng-classify": "^4.0.2",
 		"underscore-plus": "^1.5.1"
 	},
 	"devDependencies": {

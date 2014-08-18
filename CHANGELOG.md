@@ -1,3 +1,11 @@
+### 0.1.3 (2014-08-17)
+
+
+#### Bug Fixes
+
+* **compilation:** use ng-classify ^4.0.2 ([5b50985f](https://github.com/CaryLandholt/atom-ng-classify-preview/commit/5b50985fb2770ac97f248b353a3b0a1b8fc4d1df))
+
+
 ### 0.1.2 (2014-08-17)
 
 

@@ -17,7 +17,7 @@ $ apm install ng-classify-preview
 See [Snippets](#snippets) below
 
 Go to `Packages > ng-classify Preview > Toggle` to see the ng-classified version
-![](screenshot.png)
+![](https://github.com/CaryLandholt/atom-ng-classify-preview/raw/master/screenshot.png)
 
 
 ## Table of Contents

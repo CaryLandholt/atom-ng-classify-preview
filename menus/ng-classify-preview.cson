@@ -1,6 +1,8 @@
 'context-menu':
 	'.overlayer':
-		'Toggle ng-classify Preview': 'ng-classify-preview:toggle'
+		'ng-classify Preview':
+			'Toggle CoffeeScript': 'ng-classify-preview:coffee'
+			'Toggle JavaScript': 'ng-classify-preview:js'
 
 'menu': [
 	{
@@ -9,8 +11,12 @@
 			'label': 'ng-classify Preview'
 			'submenu': [
 				{
-					'label': 'Toggle'
-					'command': 'ng-classify-preview:toggle'
+					'label': 'Toggle CoffeeScript'
+					'command': 'ng-classify-preview:coffee'
+				}
+				{
+					'label': 'Toggle JavaScript'
+					'command': 'ng-classify-preview:js'
 				}
 			]
 		]

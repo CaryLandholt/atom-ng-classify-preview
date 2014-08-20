@@ -13,7 +13,8 @@
 	},
 	"main": "./lib/ng-classify-preview",
 	"activationEvents": [
-		"ng-classify-preview:toggle"
+		"ng-classify-preview:coffee",
+		"ng-classify-preview:js"
 	],
 	"private": "true",
 	"keywords": [

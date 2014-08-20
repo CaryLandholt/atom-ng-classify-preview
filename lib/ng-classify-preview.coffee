@@ -3,7 +3,14 @@ url         = require 'url'
 
 preview =
 	activate: (state) ->
-		atom.workspaceView.command 'ng-classify-preview:toggle', =>
+		lang = null
+
+		atom.workspaceView.command 'ng-classify-preview:coffee', =>
+			lang = 'coffee'
+			@toggle()
+
+		atom.workspaceView.command 'ng-classify-preview:js', =>
+			lang = 'js'
 			@toggle()
 
 		atom.workspace.registerOpener (uriToOpen) =>
@@ -20,16 +27,16 @@ preview =
 				return
 
 			if host is 'editor'
-				new PreviewView editorId: pathname.substring 1
+				new PreviewView {lang, editorId: pathname.substring 1}
 			else
-				new PreviewView filePath: pathname
+				new PreviewView {lang, filePath: pathname}
 
 	toggle: ->
 		editor = atom.workspace.getActiveEditor()
 
 		return unless editor?
 
-		uri        = "ng-classify-preview://editor/#{editor.id}"
+		uri         = "ng-classify-preview://editor/#{editor.id}"
 		previewPane = atom.workspace.paneForUri uri
 
 		return if previewPane

@@ -1,3 +1,11 @@
+## 0.2.0 (2014-08-19)
+
+
+#### Features
+
+* **JavaScript:** add JavaScript preview ([90d4cc61](https://github.com/CaryLandholt/atom-ng-classify-preview/commit/90d4cc6140e10658fb99bb02b8c8654cbe66fae8))
+
+
 ### 0.1.3 (2014-08-17)
 
 

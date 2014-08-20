@@ -1,3 +1,11 @@
+### 0.2.1 (2014-08-19)
+
+
+#### Bug Fixes
+
+* **dependencies:** add missing coffee-script dependency ([ef498911](https://github.com/CaryLandholt/atom-ng-classify-preview/commit/ef498911466683e2a7a8493c78b9692c9d9a9cf9))
+
+
 ## 0.2.0 (2014-08-19)
 
 

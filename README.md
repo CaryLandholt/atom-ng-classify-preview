@@ -1,3 +1,8 @@
+THIS PACKAGE HAS BEEN DEPRECATED
+> Please use [preview](https://atom.io/packages/preview) for previewing your ng-classify files
+> Please use [ng-classify-snippets](https://github.com/CaryLandholt/atom-ng-classify-snippets) for convenient keyboard shortcuts
+
+
 # ng-classify for [Atom](https://atom.io/)
 [![License][license-image]][license-url]
 [![Version][version-image]][version-url]
